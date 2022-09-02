@@ -26,7 +26,7 @@ const defaultMenu = {
 	before: `
 Genshin Impact JSON data with a robust searching API! Updated to version 2.8. Sources from the fandom wiki and GenshinData repo.
 
-━ ━ *[ 🐳 GENSHIN COMMAND ]* ━ ━
+━ ━ *[ GENSHIN COMMAND ]* ━ ━
 `.trimStart(),
 	header: '╭─「 %category 」',
 	body: '│ • %cmd',
@@ -82,8 +82,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 			['Owner', '/owner']
 		], m)*/
 		conn.sendButton(m.chat, text.replace(`si <character>`, `si <character>${readMore}`).trim(), packname + ' - ' + author, nais, [
-			[`👥 Owner`, `.owner`],
-			[`🪡 Ping`, `.ping`]
+			[`Owner`, `.owner`],
+			[`Ping`, `.ping`]
 		], m)
 	} catch (e) {
 		conn.reply(m.chat, 'Maaf, menugenshin sedang error', m)
