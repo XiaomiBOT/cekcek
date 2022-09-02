@@ -24,7 +24,7 @@ let tagsoxy = {
 }
 const defaultMenu = {
 	before: `
-━ ━ *[ 👼🏻 Photo Oxy ]* ━ ━
+━ ━ *[ Photo Oxy ]* ━ ━
 `.trimStart(),
 	header: '╭─「 %category 」',
 	body: '│ • %cmd',
@@ -79,8 +79,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 			['Owner', '/owner']
 		], m)*/
 		conn.sendButton(m.chat, text.replace(`message <text>`, `message <text>${readMore}`).trim(), packname + ' - ' + author, nais, [
-			[`👥 Owner`, `.owner`],
-			[`🪡 Ping`, `.ping`]
+			[`Owner`, `.owner`],
+			[`Ping`, `.ping`]
 		], m)
 	} catch (e) {
 		conn.reply(m.chat, 'Maaf, menuoxy sedang error', m)
