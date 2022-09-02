@@ -12,11 +12,11 @@ import db, { loadDatabase } from './lib/database.js'
 import Queque from './lib/queque.js'
 
 //Prems
-global.prems = ['6282151652728','6285714216711','6285640417385','6282187352115','6285803583481','6288215689772','6285651062576','77075196824'] // Premium user has unlimited limit
+global.prems = ['6282221792667','6281395861695','6285798267620','6281395861695','6282221792667','6282221792667','6282221792667','6282221792667'] // Premium user has unlimited limit
 
 // Sticker WM
-global.packname = 'Azami x Byoru'
-global.author = 'Bot V5'
+global.packname = 'TioXd'
+global.author = 'Bot Wa'
 
 //apikey
 global.api = '1431kalakuan5195'	// https://api.lolhuman.xyz/docs bukanitucuy14315195
