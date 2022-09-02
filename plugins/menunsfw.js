@@ -21,13 +21,13 @@ function padLead(num, size) {
 }
 
 let tagsnsfw = {
-	'search': '🚀 *SEARCH*',
-	'randompic': '✨ *RANDOM PIC*',
-	'randommp4': '✨ *NSFWNIME MP4*',
+	'search': '*SEARCH*',
+	'randompic': '*RANDOM PIC*',
+	'randommp4': '*NSFWNIME MP4*',
 }
 const defaultMenu = {
 	before: `
-━ ━ *[ 🚫 NSFW SFX ]* ━ ━
+━ ━ *[ NSFW SFX ]* ━ ━
 `.trimStart(),
 	header: '╭─「 %category 」',
 	body: '│ • %cmd',
@@ -89,8 +89,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 			['Owner', '/owner']
 		], m)*/
 		conn.sendButton(m.chat, text.replace(`<nuke_code>`, `<nuke_code>${readMore}`).trim(), packname + ' - ' + author, nais, [
-			[`👥 Owner`, `.owner`],
-			[`🪡 Ping`, `.ping`]
+			[`Owner`, `.owner`],
+			[`Ping`, `.ping`]
 		], m)
 	} catch (e) {
 		conn.reply(m.chat, 'Maaf, menunsfw sedang error', m)
