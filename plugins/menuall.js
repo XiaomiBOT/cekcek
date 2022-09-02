@@ -67,7 +67,7 @@ const defaultMenu = {
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, isPrems }) => {
 	let meh = padLead(ranNumb(43), 3)
-	let nais = fs.readFileSync(`./media/picbot/menus/menus_${meh}.jpg`)
+	let nais = fs.readFileSync(`./media/zero.jpg`)
 	let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
 	let { limit, role } = db.data.users[m.sender]
 	let name = await conn.getName(m.sender)
