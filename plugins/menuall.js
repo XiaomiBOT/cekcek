@@ -35,14 +35,14 @@ function runtime(seconds) {
 }
 
 let tags = {
-	'submenu': '🎪 *SUB MENU*',
-	'searching': '🔎 *SEARCHING*',
-	'randomtext': '♻️ *RANDOM TEXT*',
-	'information': '🤖 *INFORMATION*',
-	'entertainment': '🎡 *ENTERTAINMENT*',
-	'primbon': '🎆 *PRIMBON*',
-	'creator': '🖱💻 *CREATOR*',
-	'tools': '✏️ *TOOLS MENU*',
+	'submenu': '*SUB MENU*',
+	'searching': '*SEARCHING*',
+	'randomtext': '*RANDOM TEXT*',
+	'information': '*INFORMATION*',
+	'entertainment': '*ENTERTAINMENT*',
+	'primbon': '*PRIMBON*',
+	'creator': '*CREATOR*',
+	'tools': '*TOOLS MENU*',
 }
 const defaultMenu = {
 	before: `
@@ -52,8 +52,8 @@ const defaultMenu = {
 ║⧐ ⸨ *.info* ⸩
 ║⧐ ⸨ *.levelup* ⸩
 ╠═════════════════❍
-║⧐ 📈 Runtime : *%uptime*
-║⧐ 📈 OS Uptime : *%osuptime*
+║⧐ Runtime : *%uptime*
+║⧐ OS Uptime : *%osuptime*
 ╚═════════════════════
 
 ╭───「 *PROFILMU* 」
@@ -121,8 +121,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, isPrems }) => {
 	const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
 	try {
 		conn.sendButton(m.chat, text.trim(), packname + ' - ' + author, nais, [
-			[`👥 Owner`, `.owner`],
-			[`👑 Prem`, `.premium`]
+			[`Owner`, `.owner`],
+			[`Prem`, `.premium`]
 		], m)
 	} catch (e) {
 		console.log(e)
