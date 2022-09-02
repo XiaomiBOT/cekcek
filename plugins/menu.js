@@ -39,14 +39,14 @@ let tagsm = {}
 const defaultMenu = {
 	before: `%name!
 
-⦿ 🧱 Limit : *%limit Limit*
-⦿ 🦸🏼‍♂️ Role : *%role*
-⦿ 🔼 Level : *%level (%exp / %maxexp)*
-⦿ 💵 Money : *%money*
-⦿ 💫 Total XP : %totalexp ✨
+• Limit : *%limit Limit*
+• Role : *%role*
+• Level : *%level (%exp / %maxexp)*
+• Money : *%money*
+• Total XP : %totalexp ✨
 
-⦿ 📊 Database : %totalreg User
-⦿ 📈 Runtime : *%uptime*
+• Database : %totalreg User
+• Runtime : *%uptime*
 
 #OS CPU : %oscpu#
 #OS Speed : %osspeed#
@@ -134,7 +134,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, isPrems, args, usedPr
 			conn.sendHydrated(m.chat, text.replaceAll('#','```').trim(), packname + ' - ' + author, nais, 'https://cutt.ly/azamilaifuu', 'Minimalist ツ Sweet', null, null, [
 				['Premium', '.premium'],
 				['Contact', '.owner'],
-				['⦿ ALL MENU ⦿', '.menuall']
+				['ALL MENU', '.menuall']
 			], m)
 		} else {
 			if (!args[0]) {
@@ -142,31 +142,31 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, isPrems, args, usedPr
 					{
 						title: `━ ━ ━ ━ 『 MAIN 』 ━ ━ ━ ━`,
 						rows: [
-							{title: '⚡ PREMIUM', rowId: usedPrefix + 'sewa', description: 'Premium, Sewabot, Jadibot, Jasa Run Bot'},
-							{title: '🎫 OWNER', rowId: usedPrefix + 'owner', description: 'Chat P tidak dibalas'},
-							{title: '📁 Source Code', rowId: usedPrefix + 'sc', description: 'Original Base'}
+							{title: 'PREMIUM', rowId: usedPrefix + 'sewa', description: 'Premium'},
+							{title: 'OWNER', rowId: usedPrefix + 'owner', description: 'Chat P tidak dibalas'},
+							{title: 'Source Code', rowId: usedPrefix + 'sc', description: 'Original Base'}
 						]
 					}, {
 						title: `━ ━ ━ ━ 『 SUB MENU 』 ━ ━ ━ ━`,
 						rows: [
-							{title: '🎪 ALL MENU', rowId: usedPrefix + 'menuall', description: '● Menampilkan Semua Menu'},
-							{title: '🎎 ANIME', rowId: usedPrefix + 'menuanime', description: '◉ Cari Manga, Anime, Random Pic'},
-							{title: '⌛ DOWNLOAD', rowId: usedPrefix + 'menudownload',  description: '◎ Youtube, Facebook, Tiktok, Dll...'},
-							{title: '🎮 GAMES & FUN', rowId: usedPrefix + 'menufun', description: '⊛ RPG, Kuis, Anonymous'},
-							{title: '🐳 GENSHIN IMPACT', rowId: usedPrefix + 'menugenshin', description: '⊜ genshin.dev API'},
-							{title: '🔞 NSFW', rowId: usedPrefix + 'menunsfw', description: '◓ Fitur Afakah Ini ?'},
-							{title: '👥 GROUP', rowId: usedPrefix + 'menugroup', description: '◒ Command Dalam Grup'},
-							{title: '🗺 EDITOR', rowId: usedPrefix + 'menueditor',  description: 'ⓞ Kreasi Foto'},
-							{title: '💫 EPHOTO 360', rowId: usedPrefix + 'menuephoto', description: '⦿ Edit Foto Kamu'},
-							{title: '👼🏻 PHOTO OXY', rowId: usedPrefix + 'menuoxy', description: '◐ Edit Photos by Oxy'},
-							{title: '🎨 TEXT PRO ME', rowId: usedPrefix + 'menutextpro', description: '◑ Kreasi Teks Efek'},
+							{title: 'ALL MENU', rowId: usedPrefix + 'menuall', description: 'Menampilkan Semua Menu'},
+							{title: 'ANIME', rowId: usedPrefix + 'menuanime', description: 'Cari Manga, Anime, Random Pic'},
+							{title: 'DOWNLOAD', rowId: usedPrefix + 'menudownload',  description: 'Youtube'},
+							{title: 'GAMES & FUN', rowId: usedPrefix + 'menufun', description: 'RPG, Kuis, Anonymous'},
+							{title: 'GENSHIN IMPACT', rowId: usedPrefix + 'menugenshin', description: 'genshin.dev API'},
+							{title: 'NSFW', rowId: usedPrefix + 'menunsfw', description: 'Fitur Afakah Ini ?'},
+							{title: 'GROUP', rowId: usedPrefix + 'menugroup', description: 'Command Dalam Grup'},
+							{title: 'EDITOR', rowId: usedPrefix + 'menueditor',  description: 'Kreasi Foto'},
+							{title: 'EPHOTO 360', rowId: usedPrefix + 'menuephoto', description: 'Edit Foto Kamu'},
+							{title: 'PHOTO OXY', rowId: usedPrefix + 'menuoxy', description: 'Edit Photos by Oxy'},
+							{title: 'TEXT PRO ME', rowId: usedPrefix + 'menutextpro', description: 'Kreasi Teks Efek'},
 						]
 					}, {
 						title: `━ ━ ━ ━ 『 MISC 』 ━ ━ ━ ━`,
 						rows: [
-							{title: '🏓 PING', rowId: usedPrefix + 'ping'},
-							{title: '🚄 SPEEDTEST', rowId: usedPrefix + 'speedtest'},
-							{title: '🎎 DONASI', rowId: usedPrefix + 'donasi'},
+							{title: ' PING', rowId: usedPrefix + 'ping'},
+							{title: 'SPEEDTEST', rowId: usedPrefix + 'speedtest'},
+							{title: 'DONASI', rowId: usedPrefix + 'donasi'},
 						]
 					}
 				]
@@ -174,7 +174,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, isPrems, args, usedPr
 					text: text.replaceAll('#','```').trim(),
 					footer: global.wm,
 					//title: `⎔───「 ${packname} 」───⎔`,
-					buttonText: `SUB MENU 🎫`,
+					buttonText: `SUB MENU`,
 					sections
 				}
 				await conn.sendMessage(m.chat, listMessage, {quoted: ftrol})
