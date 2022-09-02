@@ -1105,15 +1105,15 @@ Untuk mematikan fitur ini, ketik
 
 global.dfail = (type, m, conn) => {
 	let msg = {
-		rowner: `*「OWNERR BOT ONLY」*`,
-		owner: `*「OWNER BOT ONLY」*`,
-		mods: `*「MODERATOR ONLY」*`,
-		premium: `*「PREMIUM USER ONLY」*\n\n*Or Get Full Access Here :*\nhttps://cutt.ly/azamilaifuu\n\nOtherwise type this : *.privatecmd*`,
-		group: `*「GROUP ONLY」*`,
-		private: `*「PRIVATE CHAT ONLY」*`,
-		admin: `*「ADMIN GROUP ONLY」*`,
-		nsfw: `*NSFW GAK AKTIF*`,
-		botAdmin: `*「BOT HARUS JADI ADMIN」*`,
+		rowner: `*Anda bukan owner!*`,
+		owner: `*Anda bukan owner!*`,
+		mods: `*Anda bukan moderator!*`,
+		premium: `*Hanya user premium*\n\n*Dapatkan akses :*\nhttps://wa.me/6282221792667`,
+		group: `*Hanya untuk grup*`,
+		private: `*Hanya untuk private chat!*`,
+		admin: `*Perintah hanya untuk admin!*`,
+		nsfw: `*Nsfw di non aktifkan!`,
+		botAdmin: `*Jadikan bot sebagai admin!*`,
 		unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
 		restrict: 'Fitur ini di *disable*!'
 	}[type]
