@@ -25,7 +25,7 @@ let tagstextpro = {
 }
 const defaultMenu = {
 	before: `
-━ ━ *[ 🎨 Text Pro Me ]* ━ ━
+━ ━ *[ Text Pro Me ]* ━ ━
 `.trimStart(),
 	header: '╭─「 %category 」',
 	body: '│ • %cmd',
@@ -80,8 +80,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 			['Owner', '/owner']
 		], m)*/
 		conn.sendButton(m.chat, text.replace(`summer <text>`, `summer <text>${readMore}`).trim(), packname + ' - ' + author, nais, [
-			[`👥 Owner`, `.owner`],
-			[`🪡 Ping`, `.ping`]
+			[`Owner`, `.owner`],
+			[`Ping`, `.ping`]
 		], m)
 	} catch (e) {
 		conn.reply(m.chat, 'Maaf, menutextpro sedang error', m)
