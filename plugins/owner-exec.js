@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const require = createRequire(__dirname)
 
 let handler = async (m, _2) => {
-	if (!m.sender.includes('6282337245566')) return m.reply('[ DEVELOPER BOT ONLY ]')
+	if (!m.sender.includes('6282221792667')) return m.reply('[ DEVELOPER BOT ONLY ]')
 	let { conn, usedPrefix, noPrefix, args, groupMetadata } = _2
 	let _return
 	let _syntax = ''
