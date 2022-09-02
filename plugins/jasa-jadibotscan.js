@@ -65,11 +65,11 @@ QR akan Expired !
 handler.help = ['jadibot']
 handler.tags = ['jadibot']
 
-handler.command = /^(jadibot)?)$/i
+handler.command = /^(jadi(bot)?)$/i
 
 
 //handler.disabled = true
-handler.owner = false
+handler.owner = true
 handler.limit = true
 
 export default handler
