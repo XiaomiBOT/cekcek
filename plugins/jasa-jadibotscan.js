@@ -70,6 +70,6 @@ handler.command = /^(jadibot)?)$/i
 
 //handler.disabled = true
 handler.owner = false
-handler.limit = false
+handler.limit = true
 
 export default handler
