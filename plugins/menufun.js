@@ -20,14 +20,14 @@ function padLead(num, size) {
 }
 
 let tagsfun = {
-	'rpg': '🎮 *RPG*',
-	'game': '🎮 *GAMES*',
-	'anonim': '🎩 *ANONYMOUS*',
-	'kerang': '🐚 *KERANG AJAIB*',
+	'rpg': '*RPG*',
+	'game': '*GAMES*',
+	'anonim': '*ANONYMOUS*',
+	'kerang': '*KERANG AJAIB*',
 }
 const defaultMenu = {
 	before: `
-━ ━ *[ 🦠 FUN MENU ]* ━ ━
+━ ━ *[ FUN MENU ]* ━ ━
 `.trimStart(),
 	header: '╭─「 %category 」',
 	body: '│ • %cmd',
@@ -82,8 +82,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 			['Owner', '/owner']
 		], m)*/
 		conn.sendButton(m.chat, text.replace(`build [item] [count]`, `build [item] [count]${readMore}`).trim(), packname + ' - ' + author, nais, [
-			[`👥 Owner`, `.owner`],
-			[`🪡 Ping`, `.ping`]
+			[`Owner`, `.owner`],
+			[`Ping`, `.ping`]
 		], m)
 	} catch (e) {
 		conn.reply(m.chat, 'Maaf, menufun sedang error', m)
